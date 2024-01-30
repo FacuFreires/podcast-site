@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hedvig Letters Serif', serif;
+  font-size: 20px;
+}
+
+
+.img-logo {
+  height: 70px;
+  width: auto;
+  cursor: pointer;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav-links li:hover{
+  transform: scale(1.1);
+}
+
+.nav-links a {
+  font-size: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover{
+  color: wheat;
+}
+
+.btn button {
+  font-weight: 700;
+  color: wheat;
+  padding: 9px 25px;
+  background: #416864;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: #416864;
+  color: wheat;
+  transform: scale(1.1);
+}
+
+/* IMG background */
+
+body{
+  margin: 0;
+  padding: 0;
+  
+  background-image: url(../imagenes/background-img.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body:before {
+  content: "";
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: linear-gradient(90deg, #52C4DF, #AD55C1);
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* MAIN */
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 300px;
+}
+
+.izquierda {
+  text-align:center;
+  width: 50%;
+  padding-left: 50px;
+}
+
+.parrafo {
+  text-align: center;
+  align-items: center;
+  color: wheat;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #0c181c;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-parrafo {
+  color: wheat;
+}
